@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RechargesServicesDetail.RechargeActivity"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_button"
+        android:layout_alignParentTop="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:minHeight="200dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="2dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+                
+                <ImageView
+                    android:id="@+id/iv_ope_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_operator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_ope_icon"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/ll_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:id="@+id/tv_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/ed_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Mobile Number"
+        android:inputType="number"
+        android:maxLines="1"
+        android:background="@drawable/edittext_shape"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_number_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="@color/error_color"
+        />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Provider"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_operator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_shape"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/tv_provider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Select Operator"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_down"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_operator_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="@color/error_color"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_validate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validate"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ll_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Circle"
+            android:layout_marginTop="10dp"
+            />
+    <RelativeLayout
+        android:id="@+id/rl_circle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_shape"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:id="@+id/tv_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Select Circle"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/arrow_down"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_circle_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="@color/error_color"
+        />
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_payment_mode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_shape"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/tv_payment_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="Select Payment Mode"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/arrow_down"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_payment_mode_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="@color/error_color"
+            />
+
+
+
+        <LinearLayout
+        android:id="@+id/ll_optional1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        >
+
+    <TextView
+        android:id="@+id/textview_optional1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/ed_other1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:background="@drawable/edittext_shape"
+        android:paddingLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/tv_optional1_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="@color/error_color"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_optional2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/textview_optional2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    <EditText
+        android:id="@+id/ed_other2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:background="@drawable/edittext_shape"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/tv_optional2_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="@color/error_color"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_optional3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/textview_optional3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    <EditText
+        android:id="@+id/ed_other3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:background="@drawable/edittext_shape"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/tv_optional3_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="@color/error_color"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            />
+
+    <EditText
+        android:id="@+id/ed_amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Amount"
+        android:inputType="number"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_shape"
+        android:paddingLeft="5dp"
+        />
+
+        <TextView
+            android:id="@+id/tv_amount_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            />
+
+        <TextView
+        android:id="@+id/tv_amount_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="@color/error_color"
+        />
+
+    </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+        <TextView
+            android:id="@+id/tv_r_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="R-Offer"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_view_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="View Plans"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/red"
+            android:visibility="gone"
+            />
+
+
+
+        <LinearLayout
+        android:id="@+id/ll_bill_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Provider"
+                    />
+                <TextView
+                    android:id="@+id/tv_providers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"
+                android:layout_marginTop="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number"
+                    />
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"
+                android:layout_marginTop="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    />
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"
+                android:layout_marginTop="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount"
+                    />
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"
+                android:layout_marginTop="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Due Date"
+                    />
+                <TextView
+                    android:id="@+id/tv_duedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/cardview_recharge"
+            app:cardCornerRadius="5dp"
+            android:visibility="gone"
+            >
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:flipInterval="2000"
+                android:autoStart="true"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/banner_image1"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/banner_image2"
+                    />
+            </ViewFlipper>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            >
+
+            <Button
+                android:id="@+id/bt_Verify"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Verify"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                />
+
+            <Button
+                android:id="@+id/bt_proceed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Pay Now"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+</RelativeLayout>

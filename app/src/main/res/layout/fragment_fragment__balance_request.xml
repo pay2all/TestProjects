@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#0FAC59B3"
+    android:clickable="true"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_balancerequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_bankdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bank">
+
+                </ImageView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Bank Details"
+                    android:layout_marginLeft="70dp"
+                    android:textColor="#070000">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/arrowright"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#030000"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="80dp"
+                android:layout_height="0.5dp">
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/rl_balancerequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/handmoney">
+
+                </ImageView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Fund Request"
+                    android:layout_marginLeft="70dp"
+                    android:textColor="#070000">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/arrowright"/>
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#030000"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="80dp"
+                android:layout_height="0.5dp">
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/rl_fund_request_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/storage"
+                    android:tint="#222296"
+                    >
+
+                </ImageView>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Fund Request Report"
+                    android:layout_marginLeft="70dp"
+                    android:textColor="#070000">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/arrowright"/>
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#030000"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="80dp"
+                android:layout_height="0.5dp">
+            </View>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="300dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#FFC107"
+        android:text="For Balance related queries call Accounts team."
+        android:gravity="center_horizontal">
+
+    </TextView>
+
+</RelativeLayout>

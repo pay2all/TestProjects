@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormDetails.KYCNewDesign"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/fingerprint_icon"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your KYC is Required"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="UPLOAD DOCUMENTS"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Detail Have to Submit by you"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_margin="10dp"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="2dp"
+                        android:background="@color/ultra_light_grey"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="5dp"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:background="@color/ultra_light_grey"
+                                >
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:visibility="gone"
+                                    >
+                                    <EditText
+                                        android:id="@+id/ed_aadhaar_number"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Enter Your Aadhaar Number"
+                                        android:inputType="number"
+                                        android:maxLength="12"
+                                        android:maxLines="1"
+                                        />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    >
+                                    <EditText
+                                        android:id="@+id/ed_pan_number"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Your PAN Number"
+                                        android:inputType="text"
+                                        android:maxLength="10"
+                                        android:maxLines="1"
+                                        android:textAllCaps="true"
+                                        android:enabled="false"
+                                        />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="160dp"
+                                    android:layout_marginTop="20dp"
+                                    android:orientation="horizontal"
+                                    >
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/light_gray"
+                                        android:layout_weight="1"
+                                        android:layout_margin="2dp"
+                                        >
+
+                                        <ImageView
+                                            android:id="@+id/iv_profile"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll_profile_photo"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:padding="10dp"
+                                            android:layout_centerInParent="true"
+                                            >
+
+                                            <ImageView
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_gravity="center"
+                                                android:src="@drawable/ic_menu_camera"
+                                                app:tint="@color/white"
+                                                />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/white"
+                                                android:layout_gravity="center"
+                                                android:text="Take Profile Photo"
+                                                android:textAlignment="center"
+                                                />
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/light_gray"
+                                        android:layout_weight="1"
+                                        android:layout_margin="2dp"
+                                        >
+
+                                        <ImageView
+                                            android:id="@+id/iv_shop_photo"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll_shop_photo"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:padding="10dp"
+                                            android:layout_centerInParent="true"
+                                            >
+
+                                            <ImageView
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_gravity="center"
+                                                android:src="@drawable/ic_menu_camera"
+                                                app:tint="@color/white"
+                                                />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/white"
+                                                android:layout_gravity="center"
+                                                android:text="Take Shop Photo"
+                                                android:textAlignment="center"
+                                                />
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="160dp"
+                                    android:orientation="horizontal"
+                                    >
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/light_gray"
+                                        android:layout_weight="1"
+                                        android:layout_margin="2dp"
+                                        >
+
+                                        <ImageView
+                                            android:id="@+id/iv_gst_registration"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll_gst_registration"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:padding="10dp"
+                                            android:layout_centerInParent="true"
+                                            >
+
+                                            <ImageView
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_gravity="center"
+                                                android:src="@drawable/ic_menu_camera"
+                                                app:tint="@color/white"
+                                                />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/white"
+                                                android:layout_gravity="center"
+                                                android:text="Take GST Registration Photo"
+                                                android:textAlignment="center"
+                                                />
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/light_gray"
+                                        android:layout_weight="1"
+                                        android:layout_margin="2dp"
+                                        >
+
+                                        <ImageView
+                                            android:id="@+id/iv_pan_photo"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll_pan_photo"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:padding="10dp"
+                                            android:layout_centerInParent="true"
+                                            >
+
+                                            <ImageView
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_gravity="center"
+                                                android:src="@drawable/ic_menu_camera"
+                                                app:tint="@color/white"
+                                                />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/white"
+                                                android:layout_gravity="center"
+                                                android:text="Take PAN Photo"
+                                                android:textAlignment="center"
+                                                />
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="160dp"
+                                    android:orientation="horizontal"
+                                    >
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/light_gray"
+                                        android:layout_weight="1"
+                                        android:layout_margin="2dp"
+                                        >
+
+                                        <ImageView
+                                            android:id="@+id/iv_cancel_cheque"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll_cancel_cheque"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:padding="10dp"
+                                            android:layout_centerInParent="true"
+                                            >
+
+                                            <ImageView
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_gravity="center"
+                                                android:src="@drawable/ic_menu_camera"
+                                                app:tint="@color/white"
+                                                />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/white"
+                                                android:layout_gravity="center"
+                                                android:text="Take Cancel Cheque Photo"
+                                                android:textAlignment="center"
+                                                />
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/light_gray"
+                                        android:layout_weight="1"
+                                        android:layout_margin="2dp"
+                                        >
+
+                                        <ImageView
+                                            android:id="@+id/iv_address_proof_photo"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            />
+
+                                        <LinearLayout
+                                            android:id="@+id/ll_address_proof_photo"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:padding="10dp"
+                                            android:layout_centerInParent="true"
+                                            >
+
+                                            <ImageView
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_gravity="center"
+                                                android:src="@drawable/ic_menu_camera"
+                                                app:tint="@color/white"
+                                                />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/white"
+                                                android:layout_gravity="center"
+                                                android:text="Take Address Proof Photo"
+                                                android:textAlignment="center"
+                                                />
+
+                                        </LinearLayout>
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <Button
+                            android:id="@+id/bt_upload"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/button_shape"
+                            android:textColor="@color/white"
+                            android:text="Upload"
+                            android:visibility="gone"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

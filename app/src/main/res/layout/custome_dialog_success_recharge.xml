@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#ffffff"
+        android:layout_margin="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageview_checkicon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp" />
+
+
+            <TextView
+                android:id="@+id/textview_requestsendsuccessfull"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recharge request sent
+                 successfully."
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#878282"
+                android:gravity="center_horizontal"></TextView>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textview_operator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="idea"
+                    android:textAlignment="center"
+                    android:textColorHint="#878282"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#6E6A6A"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_mobile_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile No :"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_mobnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="783865443"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="AMOUNT :"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Ten    (10)"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#6E6A6A"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+                <Button
+                    android:id="@+id/button_done"
+                    android:layout_width="50dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/button_shape"
+                    android:layout_weight="1"
+                    android:hint="Done"
+                    android:layout_gravity="right"
+                    android:textColorHint="@color/white"
+                    />
+
+
+                <TextView
+                    android:id="@+id/textview_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

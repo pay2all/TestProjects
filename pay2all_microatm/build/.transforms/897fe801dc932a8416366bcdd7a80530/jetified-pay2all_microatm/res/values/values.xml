@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#F4AC35</color>
+    <color name="colorPrimary">#3391D8</color>
+    <color name="colorPrimaryDark">#2673C0</color>
+    <color name="light_gray">#989897</color>
+    <color name="white_color">#ffffff</color>
+    <string name="app_name">MicroATMSDK</string>
+    <string name="sjgcjsgfjhdgfh">Y2lwaGVyb3V0bGV0c2tleQ==</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@drawable/rectangle_shape_light_grey"
+                >
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="20dp"
+                    />
+                <ImageView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/photo"
+                    android:layout_toRightOf="@+id/tv_1"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_profile_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Profile Photo"
+                    android:layout_toRightOf="@+id/iv_photo"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+                <Button
+                    android:id="@+id/bt_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="upload"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@drawable/rectangle_shape_white"
+                >
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="20dp"
+                    />
+                <ImageView
+                    android:id="@+id/iv_shop_photo"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/id_icon"
+                    android:layout_toRightOf="@+id/tv_2"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_shop_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shop Photo"
+                    android:layout_toRightOf="@+id/iv_shop_photo"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+                <Button
+                    android:id="@+id/bt_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="upload"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@drawable/rectangle_shape_light_grey"
+                >
+
+                <TextView
+                    android:id="@+id/tv_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="20dp"
+                    />
+                <ImageView
+                    android:id="@+id/iv_gst_registration"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/id_icon"
+                    android:layout_toRightOf="@+id/tv_3"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_gst_registration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GST Registration Photo"
+                    android:layout_toRightOf="@+id/iv_gst_registration"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+                <Button
+                    android:id="@+id/bt_gst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="upload"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@drawable/rectangle_shape_white"
+                >
+
+                <TextView
+                    android:id="@+id/tv_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="20dp"
+                    />
+                <ImageView
+                    android:id="@+id/iv_pan_photo"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/id_icon"
+                    android:layout_toRightOf="@+id/tv_4"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_pan_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PAN Photo"
+                    android:layout_toRightOf="@+id/iv_pan_photo"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+                <Button
+                    android:id="@+id/bt_pan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="upload"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@drawable/rectangle_shape_light_grey"
+                >
+
+                <TextView
+                    android:id="@+id/tv_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="20dp"
+                    />
+                <ImageView
+                    android:id="@+id/iv_cancel_check"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/id_icon"
+                    android:layout_toRightOf="@+id/tv_5"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_cancel_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel Check"
+                    android:layout_toRightOf="@+id/iv_cancel_check"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+                <Button
+                    android:id="@+id/bt_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="upload"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@drawable/rectangle_shape_white"
+                >
+
+                <TextView
+                    android:id="@+id/tv_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="20dp"
+                    />
+                <ImageView
+                    android:id="@+id/iv_address_proof"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/id_icon"
+                    android:layout_toRightOf="@+id/tv_6"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/tv_address_proof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address Proof Photo"
+                    android:layout_toRightOf="@+id/iv_address_proof"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+
+                <Button
+                    android:id="@+id/bt_address_proof"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="upload"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_pre_next"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rectangle_shape_light_grey"
+                android:padding="5dp"
+                >
+                <ImageButton
+                    android:id="@+id/ib_prev"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_shape_large"
+                    app:srcCompat="@drawable/icon_left_arrow"
+                    android:padding="5dp"
+                    />
+                <ImageButton
+                    android:id="@+id/ib_next"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_shape_large"
+                    app:srcCompat="@drawable/icon_right_arrow"
+                    android:padding="5dp"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

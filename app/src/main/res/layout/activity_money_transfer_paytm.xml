@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginTop="10dp">
+
+
+        <!--to show enter mobile number to check register or not or in pendding-->
+        <LinearLayout
+            android:id="@+id/ll_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Enter Customer Number"
+                android:textColor="#8B040000"
+                android:textStyle="bold"
+                android:textSize="20dp">
+
+            </TextView>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/logo"
+                    />
+
+                <TextView
+                    android:id="@+id/textview_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:drawableRight="@drawable/arrow_right"
+                    />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/bank_icon"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+
+
+
+            <EditText
+                android:background="@drawable/icon_shape"
+                android:id="@+id/edittext_mobileno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Mobile number"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:maxLength="10"
+                android:maxLines="1" />
+
+
+            <Button
+                android:id="@+id/button_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Validate"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_shape"/>
+
+
+        </LinearLayout>
+
+        <!--to show edittext firstname lastname for registration-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_contain_fname_lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+
+
+
+            <EditText
+                android:background="@drawable/icon_shape"
+                android:id="@+id/edittext_fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true" />
+
+
+            <EditText
+                android:background="@drawable/icon_shape"
+                android:id="@+id/edittext_lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_pin_addres_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <EditText
+                android:background="@drawable/icon_shape"
+                android:id="@+id/edittext_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pincode"
+                android:maxLines="1"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:maxLength="6"
+                />
+
+            <EditText
+                android:background="@drawable/icon_shape"
+                android:id="@+id/edittext_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:maxLines="1"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                />
+
+
+            <EditText
+                android:background="@drawable/icon_shape"
+                android:id="@+id/edittext_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="State"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                />
+
+        </LinearLayout>
+
+
+        <!--to show otp enter field and verify it -->
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView_otp_onusermobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#318926"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/icon_shape"
+                >
+                <EditText
+                    android:id="@+id/edittext_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your otp here"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:background="#ffffff"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Resend OTP"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:background="@drawable/button_shape"
+            android:id="@+id/button_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Continue"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            />
+
+
+
+        <!--to show pendding verification message-->
+        <LinearLayout
+            android:id="@+id/ll_pendding_verification_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+            <TextView
+                android:id="@+id/textView_pendding_verification_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#318926"
+                android:text="Number verification is pendding, Please Call on: 01139595919 "
+                android:layout_centerVertical="true"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_display_success_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#318926"
+            android:text="Wallet opened successfully."
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

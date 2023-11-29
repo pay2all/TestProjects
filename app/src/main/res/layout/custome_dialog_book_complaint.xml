@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#00000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="17dp"
+            android:weightSum="2">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dispute"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#050000">
+
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/ll_report_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Report Id"
+                        android:layout_marginTop="10dp"
+                        />
+                    <EditText
+                        android:id="@+id/ed_report_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Mobile Number"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:background="@drawable/icon_shape"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:enabled="false"
+                        />
+                    <TextView
+                        android:id="@+id/tv_report_id_error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:textColor="@color/error_color"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_provider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Provider"
+                        android:layout_marginTop="10dp"
+                        />
+                    <EditText
+                        android:id="@+id/ed_provider"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Provider"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:background="@drawable/icon_shape"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:enabled="false"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Number"
+                        android:layout_marginTop="10dp"
+                        />
+                    <EditText
+                        android:id="@+id/ed_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Number"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:background="@drawable/icon_shape"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:enabled="false"
+                        />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_choose_reason"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/icon_shape"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/textview_choose_reason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose Reason"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#050000"/>
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/arrow_down"
+                        android:layout_alignParentRight="true"/>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Message"
+                        android:layout_marginTop="20dp"
+                        />
+                    <EditText
+                        android:id="@+id/ed_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Enter Message Here..."
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:background="@drawable/icon_shape"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+                    <Button
+                        android:id="@+id/button_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_shape"
+                        android:text="Submit"
+                        android:textColor="#ffffff"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        />
+                    <Button
+                        android:id="@+id/button_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_shape"
+                        android:text="Close"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

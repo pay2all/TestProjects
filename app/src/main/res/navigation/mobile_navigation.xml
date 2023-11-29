@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home"
+    >
+
+    <fragment android:id="@+id/navigation_home"
+        android:name="com.demo.apppay2all.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home"
+        android:label="Home"
+        />
+    <fragment android:id="@+id/navigation_report"
+        android:name="com.demo.apppay2all.ui.reports.ReportsFragment"
+        tools:layout="@layout/fragment_reports"
+        android:label="Reports"
+        />
+    <fragment android:id="@+id/navigation_wallet"
+        android:name="com.demo.apppay2all.ui.wallet.WalletFragment"
+        tools:layout="@layout/fragment_wallet"
+        android:label="Wallet"
+        />
+    <fragment android:id="@+id/navigation_notification"
+        android:name="com.demo.apppay2all.ui.notifications.NotificationFragment"
+        tools:layout="@layout/fragment_notification"
+        android:label="Notification"
+        />
+
+    <fragment android:id="@+id/navigation_help"
+        android:name="com.demo.apppay2all.ui.help.HelpFragment"
+        tools:layout="@layout/fragment_help"
+        android:label="Help"
+        />
+</navigation>

@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Personal_Information">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="5dp"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Money Transfer"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#0B0000"
+                    android:layout_gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="4">
+
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/arrowright"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#070000"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="To Contact">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/toaccount"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#070000"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="To Account">
+                        </TextView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moneytransfer"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="#070000"
+                            android:layout_marginTop="5dp"
+                            android:textSize="10dp"
+                            android:text="To Self">
+                        </TextView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/bankbalance"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#070000"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Bank Balance">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="5dp"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Recharge &amp; Pay Bills"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#0B0000"
+                    android:layout_gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="4">
+
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/arrowright"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#070000"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="To Contact">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/toaccount"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#070000"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="To Account">
+                        </TextView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moneytransfer"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="#070000"
+                            android:layout_marginTop="5dp"
+                            android:textSize="10dp"
+                            android:text="To Self">
+                        </TextView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/bankbalance"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#070000"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Bank Balance">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="4">
+
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/arrowright"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#070000"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="To Contact">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/toaccount"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#070000"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="To Account">
+                        </TextView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moneytransfer"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="#070000"
+                            android:layout_marginTop="5dp"
+                            android:textSize="10dp"
+                            android:text="To Self">
+                        </TextView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/bankbalance"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#070000"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Bank Balance">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="5dp"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Quick Links"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#0B0000"
+                    android:layout_gravity="left"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="4">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_mobile_prepaid"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/arrowright"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#070000"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Wallet Topup">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/toaccount"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#070000"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Liquid Funds">
+                        </TextView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moneytransfer"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="#070000"
+                            android:layout_marginTop="5dp"
+                            android:textSize="10dp"
+                            android:text="Donate Covid Relief">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_information"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/bankbalance"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#070000"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Infromation">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="5dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="3">
+
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/arrowright"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#070000"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Wallet Topup">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/toaccount"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#070000"
+                            android:textSize="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Liquid Funds">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/moneytransfer"
+                            android:layout_gravity="center"
+                            >
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="#070000"
+                            android:layout_marginTop="5dp"
+                            android:textSize="10dp"
+                            android:text="Donate Covid Relief">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#070000"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:text="OFFERS">
+                    </TextView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#070000"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:text="REWARDS">
+                    </TextView>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#070000"
+                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:text="Refer &amp; Earn">
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                app:cardBackgroundColor="#ffffff">
+
+                <TextView
+                    android:id = "@+id/text"
+                    android:textSize = "20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width = "match_parent"
+                    android:ellipsize = "marquee"
+                    android:fadingEdge = "horizontal"
+                    android:textStyle="bold"
+                    android:marqueeRepeatLimit = "marquee_forever"
+                    android:scrollHorizontally = "true"
+                    android:textColor = "#05000E"
+                    android:text = "All Payment Solution like Online Recharge, Bill Payment,
+        Domestic Money Transfer in Single Platform 2020 |Prepaid Recharge Mobile Recharge like Idea, Vodafone, Airtel, JIO etc, Datacard Recharge, DTH TV Recharge like Airtel TV, Tatasky TV, Dish TV, SUN TV |Postpaid Bill Payment Pay Electricity Payment, Mobile Postpaid, Telephone Bill Payment, Water Bill and Many More Postpaid services in Single Platform.|AEPS using biometric device you can widthrowl Amount to your customer.||PAN Service Make PAN Card to your customer and expand your business|"
+                    android:layout_height = "wrap_content"
+                    android:singleLine = "true" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:scrollbars="none"
+                        android:id="@+id/horizontalScrollView">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/amazon"
+                                android:id="@+id/button1" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rupay"
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/button2" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/phonepe"
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/button3" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/flipkart"
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/button4" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/hdfc"
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/button5" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/phonepe"
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/button6" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rupay"
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/button7" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/amazon"
+                                android:layout_marginRight="5dp"
+                                android:id="@+id/button8"/>
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

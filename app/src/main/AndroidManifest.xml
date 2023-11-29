@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.demo.apppay2all">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CLEAR" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon,android:roundIcon">
+        <activity
+            android:name=".FlightTicketBooking.BookDetails.Book"
+            android:exported="false" />
+        <activity
+            android:name=".FlightDetail"
+            android:exported="false" />
+        <activity
+            android:name=".FlightTicketBooking.FlightListDetail.FlightList"
+            android:exported="false"
+            android:label="Flight List" />
+        <activity
+            android:name=".FlightTicketBooking.DateDetails.JourneyDate"
+            android:exported="false"
+            android:label="Select Date" />
+        <activity
+            android:name=".FlightTicketBooking.CityAirport.CityFromDestination"
+            android:exported="false"
+            android:label="Search City or Airport" />
+        <activity
+            android:name=".FlightTicketBooking.FlightSearch"
+            android:exported="false"
+            android:label="Flight" />
+        <activity
+            android:name=".AEPSList"
+            android:exported="false" />
+        <activity
+            android:name=".LoginCoroutineDetails.LoginUsingCoroutine"
+            android:exported="false" />
+        <activity
+            android:name=".LoginRxJavaDetails.LoginRxJava"
+            android:exported="false" />
+        <activity
+            android:name=".Test"
+            android:exported="false" />
+        <activity
+            android:name=".AppSettings.ReferalDetails.NewMemberLIst"
+            android:exported="false"
+            android:label="Newly Joined Members" />
+        <activity android:name=".ReceiptDetail.ReceiptNew" />
+        <activity android:name=".TestDesignNew" />
+        <activity
+            android:name=".FormDetails.KYCNewDesign"
+            android:label="Update KYC" />
+        <activity
+            android:name=".ChangePassword"
+            android:label="Change Password" />
+        <activity android:name=".RechargesServicesDetail.RechargeActivity" />
+        <activity android:name=".NotificationDetails.ViewNotification" />
+        <activity android:name=".Review_Activity" />
+        <activity android:name=".Splash" />
+        <activity android:name=".Login" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="bceres1422.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.MyDemoApp.NoActionBar" />
+        <activity
+            android:name=".NotificationDetails.AppNotification"
+            android:label="Notifications" />
+        <activity android:name=".FormDetails.FormsKyc" />
+        <activity android:name=".Personal_Information" />
+        <activity android:name=".Register" />
+        <activity
+            android:name=".ReceiptDetail.Receipt"
+            android:label="Receipt" />
+        <activity android:name=".ProviderDetail.Operator" />
+        <activity android:name=".RechargesServicesDetail.DTHRecharge" />
+        <activity
+            android:name=".AllTransactionDetail.AllTransaction"
+            android:label="All Transaction Reports" />
+        <activity
+            android:name=".AllReportsDetails.AllReports"
+            android:label="All History" />
+        <activity
+            android:name=".FundRequesDetails.FundRequestList"
+            android:label="Fund Request" />
+        <activity
+            android:name=".FundRequesDetails.FundRequest"
+            android:label="Fund Request" />
+        <activity
+            android:name=".LedgerDetail.Ledger"
+            android:label="Ledger" />
+        <activity
+            android:name=".AccountValidationReportDetails.AccountValidationReport"
+            android:label="Account Validation Report" />
+        <activity
+            android:name=".RechargeReports.Reports"
+            android:label="Recharge Report" />
+        <activity
+            android:name=".MoneyTransferDetails.MoneyDetails"
+            android:label="DMT Detail" />
+        <activity
+            android:name=".OperatorReportDetail.OperatorReport"
+            android:label="Operator Report" />
+        <activity
+            android:name=".IncomeDetails.IncomeReport"
+            android:label="Income Report" />
+        <activity
+            android:name=".ProfileDetail.ProfileViewNew"
+            android:label="Profile" />
+        <activity
+            android:name=".FundRequesDetails.BankList"
+            android:label="Bank List" />
+        <activity
+            android:name=".FundRequesDetails.Payment_request_reports"
+            android:label="Request Report" />
+        <activity
+            android:name=".PayoutServices.PayoutNew"
+            android:label="Payout" />
+        <activity
+            android:name=".PayoutServices.PayoutMoveToBank"
+            android:label="Payout" />
+        <activity
+            android:name=".PayoutServices.PayoutMoveToWallet"
+            android:label="Payout" />
+        <activity
+            android:name=".AepsReportDetails.AepsReports"
+            android:label="AEPS Report" />
+        <activity android:name=".MainActivitySingle" />
+        <activity
+            android:name=".CommingSoonActivity"
+            android:label="Coming Soon" />
+        <activity android:name=".AppSettings.Settings" />
+        <activity
+            android:name=".MoneyTransfer1.Money_Transaction"
+            android:label="Money Transfer" />
+        <activity
+            android:name=".MoneyTransfer1.SenderActivity"
+            android:label="Money Transfer" />
+        <activity
+            android:name=".MoneyTransfer1.Sender_allready_RegisterPaytm"
+            android:label="Money Transfer" />
+        <activity
+            android:name=".MoneyTransfer2.Money_Transaction"
+            android:label="Money Transfer" />
+        <activity
+            android:name=".MoneyTransfer2.SenderDetailActivity"
+            android:label="Money Transfer" />
+        <activity
+            android:name=".MoneyTransfer2.Sender_allready_RegisterPaytm"
+            android:label="Money Transfer" />
+        <activity
+            android:name=".Browse_Plan.BrowsePlan"
+            android:label="Plans" />
+        <activity
+            android:name=".CommissionDetail.CommissionDetails"
+            android:label="Commission" />
+        <activity
+            android:name=".CommissionDetail.MyComission.My_Comission"
+            android:label="Commission" />
+        <activity
+            android:name=".Fund_Transfer.GetAllMemebers"
+            android:label="Members" />
+        <activity
+            android:name=".AddMemberDetails.AddMember"
+            android:label="Add Member" />
+        <activity
+            android:name=".ROffer.R_Offer"
+            android:label="R-Offer" />
+        <activity android:name=".Search_Recharge" />
+        <activity
+            android:name=".PanCard"
+            android:label="PAN Card Coupon" />
+        <activity android:name=".TransactionRecept.Receipt" />
+        <activity
+            android:name=".AddMOneyCashFree.CashFreeAddMoney"
+            android:label="Add Money" />
+        <activity
+            android:name=".RechargesServicesDetail.GooglePlayCoupon"
+            android:label="Google Play Vouchers" />
+        <activity
+            android:name=".MicroAtm"
+            android:label="Micro ATM" />
+        <activity
+            android:name=".RechargesServicesDetail.PrepaidMobile"
+            android:label="Prepaid Mobile" />
+        <activity android:name=".ContactUs" />
+        <activity
+            android:name=".PayoutServices.PayoutAddBeneficiary"
+            android:label="Add Beneficiary" />
+        <activity
+            android:name=".PayoutServices.Payout"
+            android:label="Payout" />
+        <activity android:name=".AboutUs" />
+        <activity
+            android:name=".MemberDetail.MemberList"
+            android:label="My Members" />
+        <activity
+            android:name=".MemberDetail.FundTransfer"
+            android:label="Fund Transfer" />
+        <activity
+            android:name=".DTHPlansOld.Plans"
+            android:label="DTH Plans" />
+        <activity
+            android:name=".DTHPlansNew.DTHBrowsePlanType"
+            android:label="DTH Plans" />
+        <activity
+            android:name=".RechargeReportMVVM.RechargeReport"
+            android:label="Recharge Reports" />
+        <activity
+            android:name=".AllTransactionDetail.AllTransactionKotlin"
+            android:label="All Transaction" />
+        <activity
+            android:name=".LoginMVPDetails.LoginMvp"
+            android:label="Login MVP" />
+        <activity
+            android:name=".LoginMVVMDetails.LoginMVVM"
+            android:label="Login MVVM" />
+        <activity
+            android:name=".DesputDetails.DisputeActivity"
+            android:label="Dispute" />
+        <activity
+            android:name=".DesputDetails.DisputeTypes"
+            android:label="Dispute" />
+        <activity
+            android:name=".DesputDetails.ViewDisputDetail.ViewDispute"
+            android:label="Dispute" />
+        <activity
+            android:name=".LoginNewDetails.LoginNew"
+            android:label="Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginNewDetails.LoginNewOtp"
+            android:label="Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginNewDetails.ForgetPassword"
+            android:label="Forget Password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginNewDetails.ForgetPasswordConfirm"
+            android:label="Forget Password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RechargeServicesNew.PrepaidRecharge"
+            android:label="Prepaid Mobile" />
+    </application>
+
+</manifest>

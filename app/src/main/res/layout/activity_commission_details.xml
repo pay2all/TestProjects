@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="#ffffff"
+    tools:context=".CommissionDetail.CommissionDetails">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_commission_service"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_commission_mobile_prepaid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/prepaid">
+
+                        </ImageView>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Prepaid"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="80dp"
+                            android:textColor="#070000">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/arrowright"/>
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#030000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_height="0.5dp">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_commission_mobile_postpaid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/prepaid">
+
+                        </ImageView>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Postpaid"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="80dp"
+                            android:textColor="#070000">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/arrowright"/>
+
+
+
+                    </RelativeLayout>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#030000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_height="0.5dp">
+
+                    </View>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_commission_mobile_dth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/dish">
+
+                        </ImageView>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Dth"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="80dp"
+                            android:textColor="#070000">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/arrowright"/>
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#030000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_height="0.5dp">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_commission_mobile_landline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/landline">
+
+                        </ImageView>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Landline"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="80dp"
+                            android:textColor="#070000">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/arrowright"/>
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#030000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_height="0.5dp">
+
+                    </View>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_commission_mobile_electricity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/electricity">
+
+                        </ImageView>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Electricity"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="80dp"
+                            android:textColor="#070000">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/arrowright"/>
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#030000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_height="0.5dp">
+
+                    </View>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_commission_mobile_insurance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/insurance">
+
+                        </ImageView>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Insurance"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="80dp"
+                            android:textColor="#070000">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/arrowright"/>
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#030000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_height="0.5dp">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_commission_mobile_broadband"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/broadband">
+
+                        </ImageView>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Broadband"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="80dp"
+                            android:textColor="#070000">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/arrowright"/>
+
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#030000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_height="0.5dp">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_commission_mobile_gas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/gas">
+
+                        </ImageView>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Gas"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="80dp"
+                            android:textColor="#070000">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/arrowright"/>
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#030000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_height="0.5dp">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_commission_mobile_water"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/water">
+
+                        </ImageView>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Water"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="80dp"
+                            android:textColor="#070000">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/arrowright"/>
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#030000"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_height="0.5dp">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_commission_mobile_utilities"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/logo">
+
+                        </ImageView>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Utilities"
+                            android:layout_marginTop="5dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="80dp"
+                            android:textColor="#070000">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/arrowright"/>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

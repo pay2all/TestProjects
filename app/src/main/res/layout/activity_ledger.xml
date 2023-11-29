@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0500090C"
+    android:orientation="vertical"
+    tools:context=".LedgerDetail.Ledger">
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_rechargedetails"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cardCornerRadius="5dp"
+        android:visibility="gone"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/imageView_storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="220dp"
+            android:src="@drawable/storage">
+
+        </ImageView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/textview_icdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_date">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textview_balance_recieved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="left"
+                android:text="Transction Details"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#F44336">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+<LinearLayout
+    android:layout_below="@+id/cardview_rechargedetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#CBCBCB"
+        android:padding="10dp"
+        android:weightSum="7"
+        android:visibility="gone"
+        >
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#040000"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Time"/>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#040000"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="TXN ID"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#040000"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Particulars"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#040000"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="DR / CR"/>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#040000"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="OP. ₹"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#040000"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Profit"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#040000"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="CL. ₹"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatactionbutton_filter"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_margin="20dp"
+        android:tint="#ffffff"
+        android:src="@drawable/filter_foreground"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_ledger"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/textView_recepient_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/textView_ifsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+    <TextView
+        android:id="@+id/textview_beneficiary_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basant kumar"
+        />
+    <TextView
+        android:id="@+id/textview_acountno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="64837635637"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textview_beneficiary_name"
+        />
+    <TextView
+        android:id="@+id/textview_bankname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SBI"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textview_acountno"
+        />
+        <ImageView
+            android:id="@+id/imageView_dots"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textview_acountno"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textview_bankname"
+            >
+            <Button
+                android:id="@+id/button_transfer"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_shape"
+                android:text="Transfer"
+                android:textColor="@color/white"
+                />
+            <Button
+                android:id="@+id/button_delete"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_shape"
+                android:text="Detele"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+</RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

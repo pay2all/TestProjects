@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name" translatable="false">Demo</string>
+
+    <string name="unlock">Unlock</string>
+    <string name="confirm_pattern">Confirm your screen lock PIN,Pattern or Password</string>
+    <string name="setting_label"><![CDATA[Please set the screen lock Manually by navigating to : Settings>Security.]]></string>
+    <string name="unlock_failed">Authentication Failed</string>
+    <string name="device_is_secure">Device is now secure.</string>
+    <string name="security_device_cancelled">Device is not secure or user cancel the request.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="user_mobile_no">User mobile no</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="rs">Rs </string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="enable">Enable</string>
+    <string name="change_password">Change Password</string>
+    <string name="address">Address</string>
+    <string name="setting">Settings</string>
+    <string name="email">Email </string>
+    <string name="mobile">Mobile</string>
+    <string name="disable">Disable</string>
+    <string name="please_click_back_again_to_exit">Please click BACK again to exit</string>
+
+    <string name="skip">SKIP</string>
+
+    <string name="join_date">Join Date</string>
+    <string name="security">Security</string>
+
+    <string name="train">Train</string>
+    <string name="flight">Flight</string>
+    <string name="bus">Bus</string>
+    <string name="hotel">Hotel</string>
+
+    <string name="money_transfer">Money Transfer</string>
+    <string name="transaction">Transaction</string>
+    <string name="withdrawal">Withdrawal</string>
+
+    <!--<-->navigation<!--<-->
+    <string name="nav_refer_friends">&#160;&#160;&#160;&#160;&#160;&#160;Share</string>
+    <string name="nav_contact_us">&#160;&#160;&#160;&#160;&#160;&#160;Contact Us</string>
+    <string name="nav_about_us">&#160;&#160;&#160;&#160;&#160;&#160;About Us</string>
+    <!--navigation end here-->
+
+    <string name="enquiry">Enquiry</string>
+    <string name="aadhaar_pay">Aadhaar Pay</string>
+    <string name="mini_statement">Statement</string>
+    <string name="payout">Payout</string>
+    <string name="recharge_and_bill_pay"><![CDATA[Recharges & Bill Payments]]></string>
+    <string name="banking">Banking</string>
+    <string name="aeps_and_payout"><![CDATA[AEPS, Payout & PAN Card]]></string>
+    <string name="travel">Travel</string>
+
+    <string name="aeps_balance">AEPS Balance</string>
+    <string name="main_balance">Main Balance</string>
+    <string name="already_nhave_an_naccount">Already \nhave an \nAccount \nin \nDemo ?</string>
+    <string name="new_user_register_now">New user? Register Now</string>
+    <string name="next">Next</string>
+    <string name="start">Start</string>
+    <string name="pan_card">PAN Card</string>
+    <string name="title_activity_login_mvp">Login_mvp</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!--for aeps -->
+    <!--aeps end here-->
+
+</resources>

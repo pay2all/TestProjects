@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Permanent Address"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line_shape"
+        android:layout_marginTop="5dp"
+        />
+            <EditText
+                android:id="@+id/ed_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/icon_shape"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_address_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/error_color"
+                />
+            <EditText
+                android:id="@+id/ed_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/icon_shape"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                />
+            <TextView
+                android:id="@+id/tv_city_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                 android:textColor="@color/error_color"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_state"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_shape"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select State"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_state_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/error_color"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_district"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_shape"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:id="@+id/tv_dictrict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select District"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_district_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/error_color"
+                />
+
+
+        <EditText
+            android:id="@+id/ed_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PIN Code"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_shape"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+            <TextView
+                android:id="@+id/tv_pincode_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/error_color"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Present Address"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/cb_shame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Same As Above"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line_shape"
+            android:layout_marginTop="5dp"
+            />
+        <EditText
+            android:id="@+id/ed_p_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_shape"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+            <TextView
+                android:id="@+id/tv_present_address_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/error_color"
+                />
+
+        <EditText
+            android:id="@+id/ed_p_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_shape"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+            <TextView
+                android:id="@+id/tv_present_city_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/error_color"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rl_present_state"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_shape"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:id="@+id/tv_present_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select State"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_present_state_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/error_color"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_present_district"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_shape"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:id="@+id/tv_present_dictrict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select District"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_present_district_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/error_color"
+                />
+
+        <EditText
+            android:id="@+id/ed_p_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PIN Code"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_shape"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+            <TextView
+                android:id="@+id/tv_present_pincode_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/error_color"
+                />
+
+        <EditText
+            android:id="@+id/ed_shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Shop Name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_shape"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+            <TextView
+                android:id="@+id/tv_shopname_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/error_color"
+                />
+
+        <EditText
+            android:id="@+id/ed_office_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Office Address"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_shape"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+            <TextView
+                android:id="@+id/tv_office_address_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textColor="@color/error_color"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_pre_next"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <ImageButton
+                    android:id="@+id/ib_prev"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_shape_large"
+                    android:src="@drawable/icon_left_arrow"
+                    android:padding="5dp"
+                    />
+                <ImageButton
+                    android:id="@+id/ib_next"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_shape_large"
+                    android:src="@drawable/icon_right_arrow"
+                    android:padding="5dp"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

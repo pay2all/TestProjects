@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="OTP Verification"
+        android:textColor="#050000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Enter six Digit OTP send on your register mobile"
+        android:textColor="#050000"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/icon_shape"
+        >
+        <EditText
+            android:id="@+id/ed_otp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter OTP"
+            android:inputType="number"
+            android:maxLength="6"
+            android:background="@color/white"
+            android:layout_margin="2dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_otp_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter OTP"
+        android:textColor="@color/error_color"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:text="Resend"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/ib_close"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:hint="CLOSE"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            />
+
+        <Button
+            android:id="@+id/ib_submit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:hint="SUBMIT"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

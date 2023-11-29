@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_balancedebited"
+            android:icon="@drawable/wallet"
+            android:visible="false"
+            android:title="Balance Debited" />
+
+        <item
+            android:id="@+id/nav_complaint_report"
+            android:icon="@drawable/triangle"
+            android:title="Complaint Report"
+            android:visible="false"
+            />
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/lock_icon"
+            android:title="Change Password"
+            />
+        <item
+            android:id="@+id/nav_dispute"
+            android:icon="@drawable/triangle"
+            android:title="Dispute"
+            />
+
+
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/contact"
+            android:title="Contact" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/share"
+            android:title="Share"
+            />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about"
+            android:title="About" />
+
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/privacy"
+            android:title="Privacy" />
+
+        <item
+            android:id="@+id/nav_rateus"
+            android:icon="@drawable/rateus"
+            android:title="Rate Us" />
+
+
+
+        <item
+            android:id="@+id/nav_helplinenumber"
+            android:icon="@drawable/helplinenumber"
+            android:title="Helpline Number"
+            android:visible="false"
+            />
+
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout"
+            />
+
+    </group>
+
+</menu>

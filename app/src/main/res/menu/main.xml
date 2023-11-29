@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_profile"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/userprofile"
+        android:iconTint="@color/white"
+        android:title=""
+        />
+    <item
+        android:id="@+id/action_ekyc"
+        app:showAsAction="always"
+        android:title="e-KYC"
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/action_satalite"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/message"
+        android:iconTint="@color/white"
+        android:title="" />
+    <item
+        android:id="@+id/action_change_password"
+        android:orderInCategory="100"
+        android:title="Change Password"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Logout"/>
+
+
+
+
+
+
+</menu>
